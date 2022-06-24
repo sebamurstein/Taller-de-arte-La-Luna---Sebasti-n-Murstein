@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bree+Serif&display=swap");
+
+/* reset */
+body {
+    overflow-x: hidden;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif;
+  color: #bf2604;
+}
+body {
+  background-image: url(../IMAGENES/imagen\ fondo.jpg);
+  background-size: repeat;
+  background-attachment: scroll;
+}
+.imgTaller {
+  height: 10vh;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2.5vh;
+}
+h3 {
+  font-size: 3rem;
+  margin-top: 54px;
+}
+.imgProfesora {
+  width: 80vw;
+  height: 30vh;
+  margin-left: 5vw;
+  border: #0540f2;
+  border-style: solid;
+  border-radius: 0.5%;
+}
+#header {
+  grid-area: header;
+}
+#main {
+  grid-area: main;
+}
+#footer {
+  grid-area: footer;
+}
+#divGrid {
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-items: stretch;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh auto 5vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #bf260438;
+  width: 100vw;
+}
+nav {
+  font-family: "Bree Serif", serif;
+  font-size: 1rem;
+  width: 90vw;
+}
+nav ul {
+  top: 0;
+  width: 100%;
+  display: flex;
+}
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+/* MAIN INDEX */
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  align-content: center;
+}
+.h1 {
+  width: 80vw;
+  text-align: center;
+  font-size: 2rem;
+}
+main p {
+    font-family: "Bree Serif", serif;
+    font-size: 1rem;
+    color: #bf2604;
+    text-align: center;
+    font-weight: bold;
+    width: 90vw;
+    margin-bottom: 2vh;
+}
+iframe {
+    width: 60vw;
+    height: 30vh;
+    margin-bottom: 5vh;
+}
+/* MAIN CLASES */
+    .titClases {
+    width: 80vw;
+    text-align: center;
+    font-size: 3.5rem; 
+    margin-left: 10px; 
+    }
+    .titNuestrasClases {
+    font-size: 3rem;
+    margin-top: 15px;
+    }
+    .titTrabajos {
+    font-size: 2rem;
+    }
+    .pNuestrasClases {
+    font-size: 1.3rem;
+    }
+    #divGridClases {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh auto 2vh;
+    grid-template-areas: "header" "main" "footer";
+    }
+    .mainClases {
+    display: flex;  
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    }
+    .video1 {
+    width: 60vw;
+    height: 40vh;
+    }
+    .video2 {
+    display: none;
+    }
+    .titAdul {
+    font-size: 2rem;
+    margin-top: 20px;
+    }
+    .imgClases1 {
+    width: 80vw;
+    height: 30vh;
+    }
+    .pAdul {
+    font-size: 1.3rem;
+    }
+    .pNin {
+    font-size: 1.3rem;
+    }
+    .titNin {
+    font-size: 2rem;
+    margin-top: 20px;  
+    }
+    .imgClases2 {
+    width: 80vw;
+    height: 40vh;
+    }
+/* FOOTER */
+.footer {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.pieEnlaces {
+  display: flex;
+  font-family: "Bree Serif", serif;
+  font-size: 1rem;
+  color: #bf2604;
+  list-style: none;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100vw;
+}
+.imgInsta {
+  height: 3vh ;
+}
+.imgFace {
+  height: 3vh;
+}
+.imgMail {
+  height: 3vh;
+}
+.divPie {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 88vw;
+  justify-content: right;
+  align-items: flex-start;
+  }
+.imgDirTel {
+  width: 4vw;
+  height: auto;
+  margin-left: 1%;
+}
+.imgTel {
+  width: 5vw;
+  
+}
+.pPieDir {
+  font-size: 1rem;
+  text-align: left;  
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 700px)   {
+    .imgProfesora {
+      height: 60vh;
+    }
+    .pInicio {
+      font-size: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 1.3rem;
+    }
+    iframe {
+      height: 60vh;
+    }
+    .imgInsta {
+      height: 5vh ;
+    }
+    .imgFace {
+      height: 5vh;
+    }
+    .imgMail {
+      height: 5vh;
+    }
+    .divPie {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 88vw;
+      justify-content: right;
+      align-items: flex-end;
+      }
+    .imgDirTel {
+      width: 4vw;
+      height: auto;
+      margin-left: 1%;
+    }
+    .imgTel {
+      width: 4vw;
+    }
+    .pPieDir {
+      font-size: 1.5rem;
+      text-align: left;  
+    }
+    .footer {
+      height: 7vh;
+    }
+    #divGridClases {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-areas: "header header" "main main" "footer footer";
+    
+    }
+    .mainClases {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    }
+    .video1 {
+    width: 35vw;
+    }
+    .video2 {
+    display: inline;
+    width: 35vw;
+    height: 40vh;
+    }
+    .sectionClases {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    }
+    .imgClases1 {
+    width: 35vw;
+    margin-left: 20px;
+    }
+    .imgClases2 {
+    width: 35vw;
+    height: 30vh;
+    }
+    .artAdul {
+    width: 50%;
+    height: 5vh;
+    margin-left: 50px;
+    }
+    .pAdul {
+    height: 5vh;
+    font-size: 1rem;
+    width: 90%;
+    margin-left: 20px;
+    }
+    .pNin {
+    width: 60%;
+    margin-left: 10vw;
+    }
+      }
+  @media only screen and (min-width: 1200px) {
+    #divGridClases {
+    grid-template-rows: 10vh auto 10vh;
+    }
+    .imgProfesora {
+      height: 90vh;
+      width: 60vw;
+      margin-left: 15vw;
+    }
+    .h1 {
+      width: 60%;
+      height: 20vh;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-top: 30px;
+    }
+    .pInicio {
+      font-size: 2rem;
+      width: 80%;
+      text-align: center;
+      margin-left: 15vh;
+    }
+    nav ul li a {
+      font-size: 2rem;
+  }
+    .imgTaller {
+      height: 13vh;
+    }
+    iframe {
+      height: 60vh;
+      width: 40vw;
+    }
+    .pPieDir {
+      font-size: 2rem;
+      text-align: left;  
+    }
+    .imgTel {
+      width: 3.5vw;
+    }
+    .imgDirTel {
+      width: 3.5vw;
+      height: auto;
+      margin-left: 1%;
+    }
+    .imgInsta {
+      height: 6vh ;
+    }
+    .imgFace {
+      height: 6vh;
+    }
+    .imgMail {
+      height: 6vh;
+    }
+    .pNuestrasClases {
+    width: 63vw;
+    font-size: 2rem;
+    }
+    .titTrabajos {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    }
+    .video1 {
+    width: 40vw;
+    height: 50vh;
+    }
+    .video2 {
+    width: 40vw;
+    height: 50vh;
+    }
+    .titAdul {
+    font-size: 2.5rem;
+    }
+    .titNin {
+    font-size: 2.5rem;
+    }
+    .imgClases1 {
+    width: 35vw;
+    height: 40vh;
+    }
+    .imgClases2 {
+    width: 35vw;
+    height: 40vh;
+    }
+    .pAdul {
+    font-size: 1.3rem;
+    }
+    .sectionClases {
+    margin-bottom: 60px;
+    }
+}

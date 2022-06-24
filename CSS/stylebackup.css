@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bree+Serif&display=swap");
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif;
+  color: #bf2604;
+}
+body {
+  background-image: url(../IMAGENES/imagen\ fondo.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+}
+.grid-template-columns-row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 200vh 15vh; 
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.justify-items {
+    justify-items: stretch;
+}
+.aling-items {
+    align-items: center;
+}
+#gridHeader {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+#footer {
+    grid-area: footer;
+}
+
+.imgTaller {
+  height: 15vh;
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 52px;
+  margin-left: 50px;
+}
+h3 {
+  font-size: 3rem;
+  margin-top: 54px;
+}
+
+/*nav*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #bf260438;
+}
+
+nav {
+  font-family: "Bree Serif", serif;
+  font-size: 2rem;
+  position: sticky;
+  width: 100%;
+}
+nav ul {
+  top: 0;
+  width: 100%;
+  display: flex;
+}
+nav ul li {
+  width: 5%;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 100px;
+  padding-left: 69px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 40%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  margin-top: 1%;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* main INDEX*/
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.imgProfesora {
+  width: 60%;
+  margin-top: 2px;
+  margin-left: 40vh;
+  height: 80vh;
+  border: #0540F2 ;
+  border-style: solid;
+  border-radius: .5%;
+}
+main p {
+  font-family: "Bree Serif", serif;
+  font-size: 2.5rem;
+  color: #bf2604;
+  text-align: left; 
+  margin-left: 2%;
+  width: 90%;
+}
+
+/* IFRAME */
+
+iframe {
+  margin-left: 30%;
+  margin-top: 10px;
+  width: 30%;
+  height: 50vh;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+/* MAIN PAGE CLASES */
+
+.pNuestrasClases {
+  width: 80;
+  margin-left: 80px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.trabajosAlumnos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.titTrabajos {
+  margin-bottom: 25px;
+}
+.clases {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-flow: nowrap;
+}
+.artAdul {
+  width: 50%;
+  margin-left: 10px;
+  text-align: center;
+}
+.artAdul img {
+  width: 80%;
+}
+.artNin {
+  width: 50%;
+  text-align: center;
+}
+.artNin img {
+  width: 68%;
+}
+
+
+/* NAV CLASES */
+
+.navClases {
+  margin-left: 19%;
+}
+
+/* NAV CERAMICA */
+.navCeramica {
+  margin-left: 19%;
+}
+
+/* MAIN CERAMICA */
+
+.mainCera {
+  display: flexbox;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  width: 90%;
+  align-items: center;
+}
+.vidCera {
+  width: 50%;
+  margin-left: 30%;
+  margin-top: 40px;
+}
+.imgCera {
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+.pCera {
+  margin-top: 0;
+  font-size: 2.5rem;
+  margin-left: 10%;
+  width: 90%;
+}
+
+/* MAIN MOSAIQUISMO */
+
+.pMosaico {
+  font-size: 2.5rem;
+  margin-left: 5%;
+  width: 100%;
+}
+.mainMosaico {
+  display: flexbox;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.vidMosaico {
+  width: 50%;
+  margin-left: 35%;
+  margin-top: 20px;
+}
+.imgMosaico {
+  width: 50%;
+  margin-left: 35%;
+  margin-top: 15px;
+}
+.h3Mosaico {
+  margin-left: 35%;
+}
+
+/* MAIN CONTACTO */
+
+.mainContacto {
+  display: flexbox;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.h3Contacto {
+  margin-left: 10%;
+  width: 80%;
+}
+.imgCartel {
+  width: 40%;
+  margin-left: 3%;
+}
+.imgDentro {
+  width: 40%;
+  height: 507px;
+  margin-left: 15%;
+}
+
+/* FORM. CONTACTO */
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+.fieldset {
+  font-family: "Bree Serif", serif;
+  width: 31%;
+  height: 10vh;
+  font-size: 2.5rem;
+  color: #bf2604;
+  box-sizing: content-box;
+  border-color: #bf2604;
+  border-radius: 8px;
+}
+.button {
+  width: 30%;
+  margin-left: 0.2%;
+  height: 5vh;
+  font-family: "Bree Serif", serif;
+  font-size: 2rem;
+  color: #bf2604;
+}
+
+/* footer */
+.imgInstagram {
+  width: 10%;
+  height: auto;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 8%;
+  margin-top: 10%;
+}
+.imgMail {
+  width: 9%;
+}
+.imgFace {
+  display: inline-block;
+  width: 9%;
+  margin-right: 90;
+}
+footer ul div {
+  display: inline-block;
+}
+footer ul div img p {
+  display: inline-block;
+}
+.imgTel {
+  width: 7%;
+  margin-left: 1500px;
+}
+.imgDir {
+  width: 7%;
+  margin-left: 1500px;
+}
+
+/* FOOTER CON FLEX */
+.footer {
+  width: 100%;
+  height: 10vh;
+}
+.pieEnlaces {
+  display: flex;
+  font-family: "Bree Serif", serif;
+  font-size: 3rem;
+  color: #bf2604;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin-left: 60px;
+}
+.imgInsta {
+  height: auto;
+  width: 50px;
+}
+.imgFace {
+  height: auto;
+  width: 50px;
+}
+.imgMail {
+  height: auto;
+  width: 50px;
+}
+.divPie {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: right;
+  align-items: flex-end;
+  margin-left: 5%;
+}
+.imgDirTel {
+  width: 50px;
+  height: auto;
+  margin-left: 1%;
+}
+.imgTel {
+  width: 3vw;
+  height: 6vh;
+  margin-left: 10px;
+}
+.pPieDir {
+  font-size: 1.5rem;
+}
+
+/* FOOTER CLASES */
+
+.pieClases {
+  margin-top: 105px;
+}
