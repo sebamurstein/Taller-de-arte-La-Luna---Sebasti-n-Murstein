@@ -27,6 +27,11 @@ body {
 .imgTaller {
   height: 10vh;
 }
+.transform:hover {
+  transform: translate(5px);
+  transition: 1s;
+  transform: scale(1.21);
+}
 h2 {
   text-align: center;
   font-size: 1.5rem;
@@ -183,6 +188,40 @@ iframe {
     width: 80vw;
     height: 40vh;
     }
+/* MAIN CERAMICA */
+    #divGridCera {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh auto 8vh;
+    grid-template-areas: "header" "main" "footer";
+    }
+    .footerCera {
+    margin-top: 20px;
+    }
+    .titCera {
+    margin-left: 30vw;
+    }
+    .pCera {
+    height: 30vh;
+    font-size: 1rem;
+    width: 95vw;
+    margin-left: 10px;
+    margin-bottom: 35px;
+    }
+    .h2Cera {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    }
+    .vidCera {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 10px;
+    }
+    .imgCera {
+    width: 80vw;
+    margin-left: 10vw;
+    }
 /* FOOTER */
 .footer {
   width: 100vw;
@@ -201,6 +240,10 @@ iframe {
   flex-wrap: nowrap;
   width: 100vw;
 }
+.botRss:hover {
+  transform: translateY(-25px);
+  transition: 1s;
+  }
 .imgInsta {
   height: 3vh ;
 }
@@ -323,7 +366,39 @@ iframe {
     width: 60%;
     margin-left: 10vw;
     }
+    #divGridCera {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-areas: "header header" "main main" "footer footer";
+    }
+    .titCera {
+    font-size: 3.5rem;
+    margin-left: 5vw;
+    text-align: center;
+    }
+    .pCera {
+    font-size: 1.5rem;
+    }
+    .h2Cera {
+    font-size: 2.5rem;
+    }
+    .secMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    .vidCera {
+    width: 40vw;
+    height: 50vh;
+    }
+    .imgCera {
+    width: 35vw;
+    height: 50vh;
+    margin: 0;
+    }
       }
+
   @media only screen and (min-width: 1200px) {
     #divGridClases {
     grid-template-rows: 10vh auto 10vh;
@@ -415,5 +490,30 @@ iframe {
     }
     .sectionClases {
     margin-bottom: 60px;
+    }
+    .mainCera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    }
+    .titCera {
+    margin-top: 20px;
+    }
+    .pCera {
+    font-size: 2rem;
+    }
+    .h2Cera {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    }
+    .vidCera {
+    width: 60vw;
+    height: 70vh;
+    margin-right: 10vw;
+    }
+    .imgCera {
+    width: 50vw;
+    height: 90vh;
     }
 }

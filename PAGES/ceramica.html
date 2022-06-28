@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CERAMICA</title>
     <link rel="shorcut icon" href="../IMAGENES/imagen favicon.png" />
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/cssgridresponsive.css"/>
   </head>
   <body>
-    <header>
+    <div id="divGridCera">
+    <header id="header" class="header">
       <a href="../index.html">
         <img
-          class="imgTaller"
+          class="imgTaller transform"
           src="../IMAGENES/imagen logo.png"
           alt="logo del taller de arte la luna"
         />
       </a>
       <!-- inicio ul -->
       <nav>
-        <ul class="navCeramica">
-          <li>
+        <ul class="menu">
+          <li class="transform">
             <a href="../PAGES/clases.html">Clases</a>
           </li>
-          <li>
+          <li class="transform">
             <a href="../PAGES/mosaiquismo.html">Mosaiquismo</a>
           </li>
-          <li>
+          <li class="transform">
             <a href="../PAGES/contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
       <!-- fin ul -->
-      <h1>CERAMICA</h1>
     </header>
-    <main class="mainCera">
+    <main class="mainCera" id="main">
+      <h1 class="titCera">CERAMICA</h1>
       <section>
         <p class="pCera">
           Realizar esculturas en cerámica no solo te permitirán moldear a tu
@@ -52,8 +53,8 @@
           como regalo de cumpleaños.
         </p>
       </section>
-      <section>
-        <h2>Nuestros Alumn@s en acción</h2>
+      <section class="secMain">
+        <h2 class="h2Cera">Nuestros Alumn@s en acción</h2>
         <video class="vidCera" src="../VIDEOS/video ceramica.mp4" controls>
           video de trabajos hechos en ceramica por los alumnos y alumnas
         </video>
@@ -65,10 +66,10 @@
       </section>
     </main>
     <!-- inicio footer -->
-    <footer class="footer pieClases">
+    <footer id="footer" class="footerCera">
       <!-- inicio enlaces -->
       <ul class="pieEnlaces">
-        <li>
+        <li class="botRss">
           <a
             href="https://www.instagram.com/tallerdeartelaluna/"
             target="_blank"
@@ -80,7 +81,7 @@
             />
           </a>
         </li>
-        <li>
+        <li class="botRss">
           <a
             href="https://www.facebook.com/Taller-de-arte-La-Luna-de-Marcela-Villar-247491258614118/photos/?ref=page_internal"
             target="_blank"
@@ -92,7 +93,7 @@
             />
           </a>
         </li>
-        <li>
+        <li class="botRss">
           <a href="PAGES/contacto.html" target="_blank">
             <img class="imgMail" src="../IMAGENES/icono email.png" alt="" />
           </a>
@@ -114,5 +115,6 @@
         </div>
       </ul>
     </footer>
+  </div>
   </body>
 </html>

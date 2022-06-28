@@ -7,13 +7,14 @@
     <title>TALLER DE ARTE LA LUNA</title>
     <link rel="shorcut icon" href="IMAGENES/imagen favicon.png" />
     <link rel="stylesheet" href="CSS/cssgridresponsive.css" />
+    <link rel="stylesheet" href="CSS/animate.css"/>
   </head>
   <body>
     <div id="divGrid">
       <header id="header" class="header">
         <a href="index.html">
           <img
-            class="imgTaller"
+            class="imgTaller transform"
             src="IMAGENES/imagen logo.svg"
             alt="logo del taller de arte la luna"
           />
@@ -21,16 +22,16 @@
         <nav>
           <!-- inicio ul -->
           <ul class="menu">
-            <li>
+            <li class="transform">
               <a href="PAGES/clases.html">Clases</a>
             </li>
-            <li>
+            <li class="transform">
               <a href="PAGES/ceramica.html">Ceramica</a>
             </li>
-            <li>
+            <li class="transform">
               <a href="PAGES/mosaiquismo.html">Mosaiquismo</a>
             </li>
-            <li>
+            <li class="transform">
               <a href="PAGES/contacto.html">Contacto</a>
             </li>
           </ul>
@@ -79,7 +80,7 @@
       <footer id="footer" class="footer">
         <!-- inicio enlaces -->
         <ul class="pieEnlaces">
-          <li>
+          <li class="botRss">
             <a
               href="https://www.instagram.com/tallerdeartelaluna/"
               target="_blank"
@@ -91,7 +92,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="botRss">
             <a
               href="https://www.facebook.com/Taller-de-arte-La-Luna-de-Marcela-Villar-247491258614118/photos/?ref=page_internal"
               target="_blank"
@@ -103,7 +104,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="botRss">
             <a href="PAGES/contacto.html" target="_blank">
               <img class="imgMail" src="IMAGENES/icono email.png" alt="" />
             </a>
@@ -126,5 +127,9 @@
         </ul>
       </footer>
     </div>
+    <script src="JS/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>
